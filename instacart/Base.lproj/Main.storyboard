@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JxZ-iU-S0T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JxZ-iU-S0T">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -1245,8 +1245,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1IT-A4-SI9">
-                                <rect key="frame" x="0.0" y="139" width="393" height="533"/>
+                                <rect key="frame" x="0.0" y="139" width="393" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="616" id="UG9-b3-8B9"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ui2-Ei-4Oe">
                                     <size key="itemSize" width="200" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1328,10 +1331,10 @@
                                 <buttonConfiguration key="configuration" style="plain" image="return.left" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpG-0V-TF8">
-                                <rect key="frame" x="16" y="680" width="361" height="55"/>
+                                <rect key="frame" x="16" y="763" width="361" height="55"/>
                                 <color key="backgroundColor" red="0.55294120309999995" green="0.231372565" blue="0.39215683940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="ni1-uR-Tws"/>
+                                    <constraint firstAttribute="height" constant="55" id="jGi-jT-7JL"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -1346,9 +1349,7 @@
                         <viewLayoutGuide key="safeArea" id="oc5-3d-EGG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MpG-0V-TF8" firstAttribute="top" secondItem="1IT-A4-SI9" secondAttribute="bottom" constant="8" id="8D1-qd-Xkf"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="MpG-0V-TF8" secondAttribute="bottom" constant="83" id="CYM-k2-yEj"/>
-                            <constraint firstItem="oc5-3d-EGG" firstAttribute="trailing" secondItem="MpG-0V-TF8" secondAttribute="trailing" constant="16" id="DZ9-b3-teg"/>
+                            <constraint firstItem="MpG-0V-TF8" firstAttribute="top" secondItem="1IT-A4-SI9" secondAttribute="bottom" constant="8" symbolic="YES" id="05X-5W-Tf7"/>
                             <constraint firstItem="1IT-A4-SI9" firstAttribute="leading" secondItem="oc5-3d-EGG" secondAttribute="leading" id="Gyw-Lr-nGi"/>
                             <constraint firstItem="XV2-4j-cwv" firstAttribute="top" secondItem="XGd-by-7KS" secondAttribute="bottom" constant="8" symbolic="YES" id="Jic-xz-ex2"/>
                             <constraint firstItem="oc5-3d-EGG" firstAttribute="trailing" secondItem="XV2-4j-cwv" secondAttribute="trailing" constant="16" id="L9N-Np-vy1"/>
@@ -1356,8 +1357,11 @@
                             <constraint firstItem="XGd-by-7KS" firstAttribute="top" secondItem="oc5-3d-EGG" secondAttribute="top" id="Ray-Kd-Wea"/>
                             <constraint firstItem="1IT-A4-SI9" firstAttribute="trailing" secondItem="oc5-3d-EGG" secondAttribute="trailing" id="VzB-ZH-C8B"/>
                             <constraint firstItem="1IT-A4-SI9" firstAttribute="top" secondItem="XV2-4j-cwv" secondAttribute="bottom" constant="16" id="Wfd-65-dQW"/>
+                            <constraint firstItem="oc5-3d-EGG" firstAttribute="trailing" secondItem="MpG-0V-TF8" secondAttribute="trailing" constant="16" id="ccm-uS-R2M"/>
+                            <constraint firstItem="1IT-A4-SI9" firstAttribute="centerX" secondItem="MpG-0V-TF8" secondAttribute="centerX" id="hFO-Di-yYz"/>
+                            <constraint firstItem="MpG-0V-TF8" firstAttribute="top" secondItem="1IT-A4-SI9" secondAttribute="bottom" constant="8" symbolic="YES" id="kan-J0-ZWT"/>
                             <constraint firstItem="XV2-4j-cwv" firstAttribute="leading" secondItem="oc5-3d-EGG" secondAttribute="leading" constant="16" id="prh-2X-kDO"/>
-                            <constraint firstItem="MpG-0V-TF8" firstAttribute="leading" secondItem="oc5-3d-EGG" secondAttribute="leading" constant="16" id="qfF-gC-hge"/>
+                            <constraint firstItem="MpG-0V-TF8" firstAttribute="leading" secondItem="oc5-3d-EGG" secondAttribute="leading" constant="16" id="xBQ-me-N64"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2088,10 +2092,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

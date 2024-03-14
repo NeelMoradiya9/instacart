@@ -15,7 +15,7 @@ class CollectionViewCell3: UICollectionViewCell {
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var labstep: UILabel!
     @IBAction func act(_ sender: UIStepper) {
-        labstep.text = String(sender.value)
+         labstep.text = String(sender.value)
     }
 }
 

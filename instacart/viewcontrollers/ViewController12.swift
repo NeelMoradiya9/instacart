@@ -32,8 +32,7 @@ class ViewController12: UIViewController,UICollectionViewDelegate,UICollectionVi
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imagearr.count
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cview.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {         let cell = cview.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         as! CollectionViewCell3
         cell.name.text = name[indexPath.row]
         cell.imgv.image = imagearr[indexPath.row]
@@ -43,7 +42,7 @@ class ViewController12: UIViewController,UICollectionViewDelegate,UICollectionVi
                 return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 190, height: 240)
+        return CGSize(width: 251, height: 182)
     }
     
     @IBAction func act(_ sender: Any) {

@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         as! ViewController2
         navigationController?.pushViewController(x, animated: true)
     }
-    func signupnavigation2(){
+    func signupnavigation2(){   
         let x = storyboard?.instantiateViewController(identifier: "ViewController14")
         as! ViewController14
         navigationController?.pushViewController(x, animated: true)
